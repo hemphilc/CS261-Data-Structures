@@ -1,0 +1,75 @@
+Corey Hemphill
+10/16/2015
+CS261-001-Fern
+Amortized Analysis
+
+
+1. How many cost units are spent in the entire process of performing 16 consecutive
+ push operations on an empty array which starts out at capacity 8, assuming that
+ the array will double in capacity each time new item is added to an already
+ full dynamic array? Now try it for 32 consecutive push operations. As N (ie. the
+ number of pushes) grows large, under this strategy for resizing, what is the
+ big-oh complexity for push?
+ 
+Answer:
+	-16 Consecutive push operations costs 25 units on an empty array starting at a capacity of 8. 
+		push(8) + resize(8 + 1) + push(8) = 25
+	
+	-32 Consecutive push operations costs 58 units on an empty array starting at a capacity of 8.
+		push(8) + resize(8 + 1) + push(8) + resize(16 + 1) + push(16) = 58
+	
+	-64 Consecutive push operations costs 123 units on an empty array starting at a capacity of 8.
+		push(8) + resize(8 + 1) + push(8) + resize(16 + 1) + push(16) + resize(32 + 1) + push(32) = 123
+	
+	-128 Consecutive push operations costs 245 units on an empty array starting at a capacity of 8.
+		push(8) + resize(8 + 1) + push(8) + resize(16 + 1) + push(16) + resize(32 + 1) + push(32) + resize(64 + 1) + push(64) = 245
+		
+	
+	As the number of pushes grows larger, the big-O complexity of push under this strategy is O(1+).
+
+ 
+2. How many cost units are spent in the entire process of performing 16 consecutive
+ push operations on an empty array which starts out at capacity 8, assuming that
+ the array will grow by a constant 2 spaces each time new item is added to an
+ already full dynamic array? Now try it for 32 consecutive push operations. As N
+ (ie. the number of pushes) grows large, under this strategy for resizing, what is 
+ the big-oh complexity for push?
+ 
+Answer:
+	-16 Consecutive push operations costs 64 units on an empty array starting at a capacity of 8.
+		push(8) + resize(8 + 1) + push(2) + resize(10 + 1) + push(2) + resize(12 + 1) + push(2) + resize(14 + 1) + push(2) = 64
+		
+	-32 Consecutive push operations costs 272 units on an empty array starting at a capacity of 8.
+		push(8) + resize(8 + 1) + push(2) + resize(10 + 1) + push(2) + resize(12 + 1) + push(2) + resize(14 + 1) + push(2) + resize(16 + 1) +
+		push(2) + resize(18 + 1) + push(2) + resize(20 + 1) + push(2) + resize(22 + 1) + push(2) + resize(24 + 1) + push(2) + resize(26 + 1) +
+		push(2) + resize(28 + 1) + push(2) + resize(30 + 1) + push(2) = 272
+	
+	As the number of pushes grows larger, the big-O complexity of push under this strategy is O(n).
+ 
+3. Suppose that a dynamic array stack doubles its capacity when it is full, and shrinks
+ (on Pop only) its capacity by half when the array is half full or less. Can you
+ devise a sequence of N push() and pop() operations which will result in poor performance 
+ (O(N^2) total cost)? How might you adjust the array's shrinking policy to avoid this? 
+ (Hint: You may assume that the initial capacity of the array is N/2.)
+ 
+Answer:
+	If the initial capacity of the dynamic array is N/2, and the capacity halves when the array is half full or less, then a continuous 
+	sequence of alternating push() and pop() operations would drive the big-O complexity of push under this strategy to O(n^2). For large
+	values of n, the total cost would become enormous.
+	
+	Assuming there are 9 items in a dynamic array with a capacity of 16:
+	
+		1) pop(stack) reduces the array size to 8 (N/2) and the array capacity is halved to 8 (1 unit of cost).
+			The array is now at full capacity, so it is resized to a capacity of 16 (8 units of cost).
+			
+		2) push(stack) increases the array size to 9 (1 unit of cost).
+		
+		3) pop(stack) reduces the array size to 8 (N/2) and the array capacity is halved to 8 (1 unit of cost).
+			The array is now at full capacity, so it is resized to a capacity of 16 (8 units of cost).
+			
+		4) push(stack) increases the array size to 9 (1 unit of cost).
+		
+	Alternating back and forth drives big-O to O(n^2).
+	
+	In an effort to reduce cost, I would adjust the array's shrinking policy to reduce capacity by half when the array's size is 1/4 of its
+	current capacity.
