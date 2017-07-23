@@ -1,0 +1,113 @@
+opening file: input1.txt
+
+concordance ran in 0.000000 seconds
+Table emptyBuckets = 117
+Table count = 59
+Table capacity = 160
+Table load = 0.368750
+Deleting keys
+Removing keys for 'and,' 'me,' and 'the.'
+
+Bucket Index 3 -> Key: crunch | Value: 1 -> 
+Bucket Index 7 -> Key: for | Value: 2 -> Key: may | Value: 1 -> 
+Bucket Index 10 -> Key: new | Value: 2 -> Key: bitter | Value: 1 -> 
+Bucket Index 11 -> Key: across | Value: 2 -> Key: hot | Value: 2 -> 
+Bucket Index 15 -> Key: won't | Value: 1 -> Key: ground | Value: 1 -> 
+Bucket Index 16 -> Key: myself | Value: 1 -> 
+Bucket Index 17 -> Key: settle | Value: 1 -> 
+Bucket Index 45 -> Key: leave | Value: 1 -> 
+Bucket Index 52 -> Key: as | Value: 1 -> 
+Bucket Index 53 -> Key: at | Value: 1 -> Key: of | Value: 2 -> 
+Bucket Index 55 -> Key: it's | Value: 1 -> Key: in | Value: 3 -> Key: blooming | Value: 1 -> Key: watch | Value: 1 -> 
+Bucket Index 59 -> Key: today's | Value: 1 -> 
+Bucket Index 60 -> Key: found | Value: 1 -> 
+Bucket Index 61 -> Key: it | Value: 2 -> 
+Bucket Index 66 -> Key: so | Value: 1 -> 
+Bucket Index 67 -> Key: trees | Value: 1 -> Key: to | Value: 2 -> 
+Bucket Index 72 -> Key: brown | Value: 1 -> 
+Bucket Index 88 -> Key: leaf | Value: 1 -> 
+Bucket Index 93 -> Key: falling | Value: 1 -> 
+Bucket Index 96 -> Key: hear | Value: 1 -> 
+Bucket Index 97 -> Key: find | Value: 1 -> Key: a | Value: 2 -> 
+Bucket Index 98 -> Key: cold | Value: 1 -> Key: heat | Value: 1 -> 
+Bucket Index 100 -> Key: here | Value: 1 -> 
+Bucket Index 101 -> Key: take | Value: 1 -> 
+Bucket Index 102 -> Key: sand | Value: 1 -> 
+Bucket Index 105 -> Key: i | Value: 6 -> 
+Bucket Index 107 -> Key: does | Value: 1 -> 
+Bucket Index 108 -> Key: hope | Value: 1 -> 
+Bucket Index 110 -> Key: best | Value: 1 -> Key: buds | Value: 1 -> 
+Bucket Index 111 -> Key: walk | Value: 1 -> 
+Bucket Index 114 -> Key: wind | Value: 1 -> 
+Bucket Index 115 -> Key: blistering | Value: 1 -> 
+Bucket Index 116 -> Key: last | Value: 1 -> Key: from | Value: 1 -> Key: blow | Value: 1 -> 
+Bucket Index 117 -> Key: wait | Value: 1 -> 
+Bucket Index 118 -> Key: someone | Value: 1 -> 
+Bucket Index 119 -> Key: shelter | Value: 1 -> 
+Bucket Index 120 -> Key: will | Value: 1 -> Key: down | Value: 1 -> Key: this | Value: 1 -> 
+Bucket Index 127 -> Key: know | Value: 1 -> 
+Bucket Index 139 -> Key: bed | Value: 1 -> 
+Bucket Index 142 -> Key: crackling | Value: 1 -> 
+Bucket Index 156 -> Key: bay | Value: 1 -> 
+Bucket Index 157 -> Key: see | Value: 1 -> 
+Bucket Index 158 -> Key: day | Value: 2 -> 
+
+crunch : 1
+for : 2
+may : 1
+new : 2
+bitter : 1
+across : 2
+hot : 2
+won't : 1
+ground : 1
+myself : 1
+settle : 1
+leave : 1
+as : 1
+at : 1
+of : 2
+it's : 1
+in : 3
+blooming : 1
+watch : 1
+today's : 1
+found : 1
+it : 2
+so : 1
+trees : 1
+to : 2
+brown : 1
+leaf : 1
+falling : 1
+hear : 1
+find : 1
+a : 2
+cold : 1
+heat : 1
+here : 1
+take : 1
+sand : 1
+i : 6
+does : 1
+hope : 1
+best : 1
+buds : 1
+walk : 1
+wind : 1
+blistering : 1
+last : 1
+from : 1
+blow : 1
+wait : 1
+someone : 1
+shelter : 1
+will : 1
+down : 1
+this : 1
+know : 1
+bed : 1
+crackling : 1
+bay : 1
+see : 1
+day : 2
