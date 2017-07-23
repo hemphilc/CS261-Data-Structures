@@ -1,0 +1,15 @@
+all: prog
+
+prog: bst.o compare1.o
+	gcc -g -Wall -std=c99 -o prog bst.o compare1.o
+
+compare.o: compare1.c
+	gcc -g -Wall -std=c99 -c compare1.c
+		
+bst.o: bst.c bst.h
+	gcc -g -Wall -std=c99 -c bst.c
+
+clean:	
+	rm bst.o
+	rm compare1.o
+	rm prog
